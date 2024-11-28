@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .item {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <img src="Foto/Pro.jpg" class="img-thumbnail" alt="..." style="border-radius: 50%; width: 150px; height: 150px;">
+        <h5></h5>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Greeting to those who read this. I am Javier Oscar and I was born and raised in Medan, a small chaotic city in the Sumatra island in Indonesia. I am 17 years old now and I will be graduating soon probably like 5 month or less. My Hobby is Photography , I love taking picture about the nature or the art made by human</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Photos i Took</h2>
+        <div class="portfolio-item">
+            <div class="item">
+                <h3>Coffee</h3>
+                <img src="Foto/Coffee.jpg" class="img-thumbnail" alt="..." style="width: 200px;">
+
+                <p>Life is like coffee, the darker it gets, the more it energizes.</p>
+            </div>
+            <div class="item">
+                <h3>London Bridge Is Falling Down</h3>
+                <img src="Foto/Bridge.jpg" class="img-thumbnail" alt="..." style="width: 200px;">
+                <p>Bridges are strong symbols in both literal and metaphorical contexts. They stand for connection, resilience, evolution, and progress.</p>
+            </div>
+            <div class="item">
+                <h3>Sun Gradually Goes Away</h3>
+                <img src="Foto/Sunset.jpg" class="img-thumbnail" alt="..." style="width: 200px;">
+                <p>Sunsets are proof that no matter what happens, every day can end beautifully.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to buy my picture , feel free to reach out!</p>
+        <form action="your-server-endpoint" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
